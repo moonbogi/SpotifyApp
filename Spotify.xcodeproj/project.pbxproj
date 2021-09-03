@@ -31,6 +31,7 @@
 		659A3A0E26E2D488001C61C0 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A0D26E2D488001C61C0 /* UserProfile.swift */; };
 		659A3A1026E2D495001C61C0 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A0F26E2D495001C61C0 /* Artist.swift */; };
 		659A3A1226E2D523001C61C0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A1126E2D523001C61C0 /* SearchViewController.swift */; };
+		659A3A1426E2E284001C61C0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A1326E2E284001C61C0 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		659A3A0D26E2D488001C61C0 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		659A3A0F26E2D495001C61C0 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		659A3A1126E2D523001C61C0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		659A3A1326E2E284001C61C0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				659A39C026E2CEBB001C61C0 /* Assets.xcassets */,
 				659A39B726E2CEB8001C61C0 /* AppDelegate.swift */,
 				659A39B926E2CEB8001C61C0 /* SceneDelegate.swift */,
+				659A3A1326E2E284001C61C0 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				659A3A1226E2D523001C61C0 /* SearchViewController.swift in Sources */,
 				659A39B826E2CEB8001C61C0 /* AppDelegate.swift in Sources */,
 				659A39F226E2D377001C61C0 /* LibraryViewController.swift in Sources */,
+				659A3A1426E2E284001C61C0 /* Extensions.swift in Sources */,
 				659A3A0026E2D401001C61C0 /* PlaylistViewController.swift in Sources */,
 				659A3A0E26E2D488001C61C0 /* UserProfile.swift in Sources */,
 				659A39BA26E2CEB8001C61C0 /* SceneDelegate.swift in Sources */,
