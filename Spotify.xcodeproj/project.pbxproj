@@ -32,6 +32,7 @@
 		659A3A1026E2D495001C61C0 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A0F26E2D495001C61C0 /* Artist.swift */; };
 		659A3A1226E2D523001C61C0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A1126E2D523001C61C0 /* SearchViewController.swift */; };
 		659A3A1426E2E284001C61C0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A1326E2E284001C61C0 /* Extensions.swift */; };
+		659A3A1626E6B585001C61C0 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A3A1526E6B585001C61C0 /* AuthResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		659A3A0F26E2D495001C61C0 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		659A3A1126E2D523001C61C0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		659A3A1326E2E284001C61C0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		659A3A1526E6B585001C61C0 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				659A3A0B26E2D47F001C61C0 /* AudioTrack.swift */,
 				659A3A0F26E2D495001C61C0 /* Artist.swift */,
 				659A3A0D26E2D488001C61C0 /* UserProfile.swift */,
+				659A3A1526E6B585001C61C0 /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				659A39EE26E2D33F001C61C0 /* TabBarViewController.swift in Sources */,
 				659A3A0826E2D456001C61C0 /* HapticsManager.swift in Sources */,
 				659A3A0C26E2D47F001C61C0 /* AudioTrack.swift in Sources */,
+				659A3A1626E6B585001C61C0 /* AuthResponse.swift in Sources */,
 				659A39BC26E2CEB8001C61C0 /* HomeViewController.swift in Sources */,
 				659A39F626E2D399001C61C0 /* AuthViewController.swift in Sources */,
 				659A3A1226E2D523001C61C0 /* SearchViewController.swift in Sources */,
