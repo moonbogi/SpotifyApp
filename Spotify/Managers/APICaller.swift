@@ -47,7 +47,7 @@ final class APICaller {
 
     public func getPlaylistDetails(for playlist: Playlist, completion: @escaping (Result<PlaylistDetailsResponse, Error>) -> Void) {
         createRequest(
-            with: URL(string: Constants.baseAPIURL + "/playlists/" + playlist.id),
+            with: URL(string: "https://api.spotify.com/v1/playlists/37i9dQZF1DX4PP3DA4J0N8"),
             type: .GET
         ) { request in
             let task = URLSession.shared.dataTask(with: request) { data, _, error in

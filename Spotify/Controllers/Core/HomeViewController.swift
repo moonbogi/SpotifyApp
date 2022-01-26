@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         title = "Home"
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = UIColor(red: 237/255.0, green: 236/255.0, blue: 232/255.0, alpha: 1.0)
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage(systemName: "gear"),
             style: .done,

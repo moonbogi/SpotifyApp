@@ -13,6 +13,7 @@ protocol PlayerViewControllerDelegate: AnyObject {
     func didTapForward()
     func didTapBackward()
     func didSlideSlider(_ value: Float)
+    func didTapClose()
 }
 
 class PlayerViewController: UIViewController {
@@ -61,10 +62,11 @@ class PlayerViewController: UIViewController {
 
     private func configureBarButtons() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(didTapClose))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(didTapAction))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(didTapAction))
     }
 
     @objc private func didTapClose() {
+        delegate?.didTapClose()
         dismiss(animated: true, completion: nil)
     }
 

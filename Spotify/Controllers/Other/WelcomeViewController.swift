@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController {
     private let signInButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .white
-        button.setTitle("Sign In with Spotify", for: .normal)
+        button.setTitle("Begin my sleep", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         return button
     }()
@@ -37,29 +37,39 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Spotify"
+        title = "Spotify: Sleep Logger"
 //        view.backgroundColor = .systemGreen
         view.addSubview(signInButton)
         signInButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
         
-        view.backgroundColor = .systemGreen
+        view.backgroundColor = UIColor(red: 237/255.0, green: 236/255.0, blue: 232/255.0, alpha: 1.0)
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
         setUpNoPlaylistsView()
         fetchData()
         print("Playlists1: \(playlists)")
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+
         if AuthManager.shared.isSignedIn {
+            fetchData()
+
             signInButton.isHidden = true
             tableView.isHidden = false
+//            navigationItem.rightBarButtonItem?.isEnabled = true
         } else {
             signInButton.isHidden = false
             tableView.isHidden = true
+            
+//            navigationItem.rightBarButtonItem?.isEnabled = false
         }
     }
 
@@ -151,6 +161,10 @@ class WelcomeViewController: UIViewController {
 
         present(alert, animated: true)
     }
+//    
+//    @objc private func didTapAdd() {
+//        showCreatePlaylistAlert()
+//    }
     
     @objc func didTapSignIn() {
         let vc = AuthViewController()
@@ -177,6 +191,8 @@ class WelcomeViewController: UIViewController {
 //        mainAppTabBarVC.modalPresentationStyle = .fullScreen
 //        present(mainAppTabBarVC, animated: true)
     }
+    
+    
 }
 
 extension WelcomeViewController: ActionLabelViewDelegate {

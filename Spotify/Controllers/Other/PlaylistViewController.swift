@@ -78,12 +78,14 @@ class PlaylistViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
 
+        print("Selected Playlist: \(playlist)")
         APICaller.shared.getPlaylistDetails(for: playlist) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let model):
                     self?.tracks = model.tracks.items.compactMap({ $0.track })
                     self?.viewModels = model.tracks.items.compactMap({
+
                         RecommendedTrackCellViewModel(
                             name: $0.track.name,
                             artistName: $0.track.artists.first?.name ?? "-",
@@ -97,11 +99,11 @@ class PlaylistViewController: UIViewController {
             }
         }
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .action,
-            target: self,
-            action: #selector(didTapShare)
-        )
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(
+//            barButtonSystemItem: .action,
+//            target: self,
+//            action: #selector(didTapShare)
+//        )
 
         let gesture = UILongPressGestureRecognizer(target: self,
                                                    action: #selector(didLongPress(_:)))

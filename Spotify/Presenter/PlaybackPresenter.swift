@@ -136,6 +136,10 @@ extension PlaybackPresenter: PlayerViewControllerDelegate {
     func didSlideSlider(_ value: Float) {
         player?.volume = value
     }
+    
+    func didTapClose() {
+        player?.replaceCurrentItem(with: nil)
+    }
 }
 
 extension PlaybackPresenter: PlayerDataSource {
